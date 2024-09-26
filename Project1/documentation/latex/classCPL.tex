@@ -1,0 +1,101 @@
+\hypertarget{classCPL}{}\doxysection{C\+PL Class Reference}
+\label{classCPL}\index{CPL@{CPL}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCPL_a9d0a289732e5f1c816bb46f3e9338508}{C\+PL}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classCPL}{C\+PL}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCPL_a9dff4a0bb83065509fad7c7df17d572f}{Upd\+Audit}} (std\+::string to\+Append)
+\begin{DoxyCompactList}\small\item\em Appends a string to the audit file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_af185cce95aebde0dd2f9085a06a72056}\label{classCPL_af185cce95aebde0dd2f9085a06a72056}} 
+void \mbox{\hyperlink{classCPL_af185cce95aebde0dd2f9085a06a72056}{Tally\+Votes}} ()
+\begin{DoxyCompactList}\small\item\em Tally the votes and determine the winner of the election. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCPL_a8f6726e3d570ac55620c9619618ad937}{Tie\+Checker}} ()
+\begin{DoxyCompactList}\small\item\em Checks if there is a tie in the election. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCPL_ab210bb2030e506a9a02ffcf40486e478}{Get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em Returns the winner of the election. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPL_ae8d0c96195e34c18b96aa7887ee23620}\label{classCPL_ae8d0c96195e34c18b96aa7887ee23620}} 
+std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ {\bfseries parties}
+\item 
+\mbox{\Hypertarget{classCPL_a1239e2983317fe84dc42382c0c837b99}\label{classCPL_a1239e2983317fe84dc42382c0c837b99}} 
+int {\bfseries num\+Parties}
+\item 
+\mbox{\Hypertarget{classCPL_a8dae7cc82e148978a0cb7fa9d845d05d}\label{classCPL_a8dae7cc82e148978a0cb7fa9d845d05d}} 
+int {\bfseries num\+Seats}
+\item 
+\mbox{\Hypertarget{classCPL_addbd1d8c49fba8bd50e7cd75b56c826c}\label{classCPL_addbd1d8c49fba8bd50e7cd75b56c826c}} 
+std\+::string {\bfseries filename}
+\item 
+\mbox{\Hypertarget{classCPL_ab6a7aabbca7fc9cf3f1876fb4b509641}\label{classCPL_ab6a7aabbca7fc9cf3f1876fb4b509641}} 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ {\bfseries party\+Candidates}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCPL_a9d0a289732e5f1c816bb46f3e9338508}\label{classCPL_a9d0a289732e5f1c816bb46f3e9338508}} 
+\index{CPL@{CPL}!CPL@{CPL}}
+\index{CPL@{CPL}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{CPL()}{CPL()}}
+{\footnotesize\ttfamily C\+P\+L\+::\+C\+PL (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classCPL}{C\+PL}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file containing the election data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPL_ab210bb2030e506a9a02ffcf40486e478}\label{classCPL_ab210bb2030e506a9a02ffcf40486e478}} 
+\index{CPL@{CPL}!GetWinner@{GetWinner}}
+\index{GetWinner@{GetWinner}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{GetWinner()}{GetWinner()}}
+{\footnotesize\ttfamily std\+::string C\+P\+L\+::\+Get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the winner of the election. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the winning party in the election. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a8f6726e3d570ac55620c9619618ad937}\label{classCPL_a8f6726e3d570ac55620c9619618ad937}} 
+\index{CPL@{CPL}!TieChecker@{TieChecker}}
+\index{TieChecker@{TieChecker}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{TieChecker()}{TieChecker()}}
+{\footnotesize\ttfamily bool C\+P\+L\+::\+Tie\+Checker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if there is a tie in the election. 
+
+\begin{DoxyReturn}{Returns}
+True if there is a tie, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a9dff4a0bb83065509fad7c7df17d572f}\label{classCPL_a9dff4a0bb83065509fad7c7df17d572f}} 
+\index{CPL@{CPL}!UpdAudit@{UpdAudit}}
+\index{UpdAudit@{UpdAudit}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{UpdAudit()}{UpdAudit()}}
+{\footnotesize\ttfamily void C\+P\+L\+::\+Upd\+Audit (\begin{DoxyParamCaption}\item[{std\+::string}]{to\+Append }\end{DoxyParamCaption})}
+
+
+
+Appends a string to the audit file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Append} & The string to append to the audit file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/chen6377/\+C\+S\+C\+I-\/5801/repo-\/\+Team4/\+Project1/include/C\+P\+L.\+h\end{DoxyCompactItemize}

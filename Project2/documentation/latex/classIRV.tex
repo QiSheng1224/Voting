@@ -1,0 +1,136 @@
+\hypertarget{classIRV}{}\doxysection{I\+RV Class Reference}
+\label{classIRV}\index{IRV@{IRV}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIRV_ad3617729f107a978af3d772e904d7605}{I\+RV}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classIRV}{I\+RV}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRV_a52f9686a4e326f3d43082966211b1bc6}{Upd\+Audit}} (std\+::string to\+Append)
+\begin{DoxyCompactList}\small\item\em Appends a string to the audit file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIRV_a36d445efacf84e5e4e9c793a077fa50e}\label{classIRV_a36d445efacf84e5e4e9c793a077fa50e}} 
+void \mbox{\hyperlink{classIRV_a36d445efacf84e5e4e9c793a077fa50e}{Tally\+Votes}} ()
+\begin{DoxyCompactList}\small\item\em Tally the votes in the election. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIRV_a562394994ac6bc3fa69f490501d4504e}\label{classIRV_a562394994ac6bc3fa69f490501d4504e}} 
+void \mbox{\hyperlink{classIRV_a562394994ac6bc3fa69f490501d4504e}{Eliminate}} ()
+\begin{DoxyCompactList}\small\item\em Eliminate the candidate with the fewest votes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIRV_a8690dce3e8d65c782b0dab08ed029e6a}\label{classIRV_a8690dce3e8d65c782b0dab08ed029e6a}} 
+void \mbox{\hyperlink{classIRV_a8690dce3e8d65c782b0dab08ed029e6a}{Majority\+Checker}} ()
+\begin{DoxyCompactList}\small\item\em Check if there is a majority winner in the election. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIRV_a0173bbeafaffc7ae61f91fd3c32e1817}\label{classIRV_a0173bbeafaffc7ae61f91fd3c32e1817}} 
+void \mbox{\hyperlink{classIRV_a0173bbeafaffc7ae61f91fd3c32e1817}{Check\+Popularity}} ()
+\begin{DoxyCompactList}\small\item\em Check if there is a candidate with the most first-\/choice votes in a popularity contest. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIRV_ae9480f50d80952aabd01965df2de4a2a}{Tie\+Checker}} ()
+\begin{DoxyCompactList}\small\item\em Check if a tie has occurred. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIRV_a59c3f5444ea91b599bf247abb9ceb932}{Get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the winning candidate or party. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIRV_a15ee678c9ca418b6a9fcebbe620c26aa}{Set\+Winner}} (std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ to\+Upd)
+\begin{DoxyCompactList}\small\item\em Updates parties vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIRV_a38342720d5c4bfbafc50c8a30f86053d}\label{classIRV_a38342720d5c4bfbafc50c8a30f86053d}} 
+std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ \mbox{\hyperlink{classIRV_a38342720d5c4bfbafc50c8a30f86053d}{Get\+Tied}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vector of tied candidates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIRV_a96ffdfee650a3012479de880a813bfd1}\label{classIRV_a96ffdfee650a3012479de880a813bfd1}} 
+bool {\bfseries tie}
+\item 
+\mbox{\Hypertarget{classIRV_a2f66414d4ac91a3e2751657fe14c820a}\label{classIRV_a2f66414d4ac91a3e2751657fe14c820a}} 
+bool {\bfseries maj\+Check}
+\item 
+\mbox{\Hypertarget{classIRV_adc0e7e0ac6940bf78c64e4b177af659f}\label{classIRV_adc0e7e0ac6940bf78c64e4b177af659f}} 
+int {\bfseries num\+Candidates}
+\item 
+\mbox{\Hypertarget{classIRV_ac331c845e049c10464b8fcedfaf49121}\label{classIRV_ac331c845e049c10464b8fcedfaf49121}} 
+int {\bfseries num\+Eliminated}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIRV_aa4211579f03155ed6e47a521047b8649}\label{classIRV_aa4211579f03155ed6e47a521047b8649}} 
+bool {\bfseries popularity}
+\item 
+\mbox{\Hypertarget{classIRV_a7ca687a4f89637e5f0c00f36c6ead512}\label{classIRV_a7ca687a4f89637e5f0c00f36c6ead512}} 
+bool {\bfseries majority}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIRV_ad3617729f107a978af3d772e904d7605}\label{classIRV_ad3617729f107a978af3d772e904d7605}} 
+\index{IRV@{IRV}!IRV@{IRV}}
+\index{IRV@{IRV}!IRV@{IRV}}
+\doxysubsubsection{\texorpdfstring{IRV()}{IRV()}}
+{\footnotesize\ttfamily I\+R\+V\+::\+I\+RV (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classIRV}{I\+RV}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & A string representing the name of the file containing the election data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIRV_a59c3f5444ea91b599bf247abb9ceb932}\label{classIRV_a59c3f5444ea91b599bf247abb9ceb932}} 
+\index{IRV@{IRV}!GetWinner@{GetWinner}}
+\index{GetWinner@{GetWinner}!IRV@{IRV}}
+\doxysubsubsection{\texorpdfstring{GetWinner()}{GetWinner()}}
+{\footnotesize\ttfamily std\+::string I\+R\+V\+::\+Get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the winning candidate or party. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the name of the winning candidate or party. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRV_a15ee678c9ca418b6a9fcebbe620c26aa}\label{classIRV_a15ee678c9ca418b6a9fcebbe620c26aa}} 
+\index{IRV@{IRV}!SetWinner@{SetWinner}}
+\index{SetWinner@{SetWinner}!IRV@{IRV}}
+\doxysubsubsection{\texorpdfstring{SetWinner()}{SetWinner()}}
+{\footnotesize\ttfamily void I\+R\+V\+::\+Set\+Winner (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$}]{to\+Upd }\end{DoxyParamCaption})}
+
+
+
+Updates parties vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Upd} & The vectors of entrants to update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIRV_ae9480f50d80952aabd01965df2de4a2a}\label{classIRV_ae9480f50d80952aabd01965df2de4a2a}} 
+\index{IRV@{IRV}!TieChecker@{TieChecker}}
+\index{TieChecker@{TieChecker}!IRV@{IRV}}
+\doxysubsubsection{\texorpdfstring{TieChecker()}{TieChecker()}}
+{\footnotesize\ttfamily bool I\+R\+V\+::\+Tie\+Checker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if a tie has occurred. 
+
+\begin{DoxyReturn}{Returns}
+A boolean indicating whether a tie has occurred. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIRV_a52f9686a4e326f3d43082966211b1bc6}\label{classIRV_a52f9686a4e326f3d43082966211b1bc6}} 
+\index{IRV@{IRV}!UpdAudit@{UpdAudit}}
+\index{UpdAudit@{UpdAudit}!IRV@{IRV}}
+\doxysubsubsection{\texorpdfstring{UpdAudit()}{UpdAudit()}}
+{\footnotesize\ttfamily void I\+R\+V\+::\+Upd\+Audit (\begin{DoxyParamCaption}\item[{std\+::string}]{to\+Append }\end{DoxyParamCaption})}
+
+
+
+Appends a string to the audit file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Append} & A string to be appended to the audit file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/achum003/\+Desktop/csci-\/5801/repo-\/\+Team4/\+Project2/src/include/I\+R\+V.\+h\end{DoxyCompactItemize}

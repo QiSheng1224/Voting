@@ -1,0 +1,139 @@
+\hypertarget{classPO}{}\doxysection{PO Class Reference}
+\label{classPO}\index{PO@{PO}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPO_aa4eade274e78cdc6f4d37b8db1d9fce1}{PO}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classPO}{PO}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPO_a9c52812fbea34c872cdd2fe50475d6ea}{Upd\+Audit}} (std\+::string to\+Append)
+\begin{DoxyCompactList}\small\item\em Appends a string to the audit file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPO_a824f1e05a2084c8cef0e33f920771231}\label{classPO_a824f1e05a2084c8cef0e33f920771231}} 
+void \mbox{\hyperlink{classPO_a824f1e05a2084c8cef0e33f920771231}{Tally\+Votes}} ()
+\begin{DoxyCompactList}\small\item\em Tally the votes and determine the winner of the election. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPO_aa7baf6622e6e001e4c2cc667f515e1ae}{Tie\+Checker}} ()
+\begin{DoxyCompactList}\small\item\em Checks if there is a tie in the election. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPO_a82bbddb71c36af59e8c8990b84289ce6}{Get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em Returns the winner of the election. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ \mbox{\hyperlink{classPO_a5ef1cda2a89681bac1dd19a445d86533}{Get\+Tied\+Parties}} ()
+\begin{DoxyCompactList}\small\item\em Get the Tied\+Parties vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPO_a8329a50fa3e508af9232daee2af4a88d}{Set\+Winner}} (std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ to\+Upd)
+\begin{DoxyCompactList}\small\item\em Updates parties vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPO_aada94f0965ddbe002f314f08c10066c9}\label{classPO_aada94f0965ddbe002f314f08c10066c9}} 
+bool {\bfseries tie}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPO_a7d04ead426a65a1bdeabac32d1fab051}\label{classPO_a7d04ead426a65a1bdeabac32d1fab051}} 
+std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ {\bfseries parties}
+\item 
+\mbox{\Hypertarget{classPO_a5af16b3ed76b9e0f6832f475d0d14fb2}\label{classPO_a5af16b3ed76b9e0f6832f475d0d14fb2}} 
+int {\bfseries num\+Candidates}
+\item 
+\mbox{\Hypertarget{classPO_ab0fa0e4e70b7d3aadea4168cb44263c8}\label{classPO_ab0fa0e4e70b7d3aadea4168cb44263c8}} 
+std\+::string {\bfseries filename}
+\item 
+\mbox{\Hypertarget{classPO_a55e7d8e3f327230b8e132fb93287cf00}\label{classPO_a55e7d8e3f327230b8e132fb93287cf00}} 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ {\bfseries party\+Candidates}
+\item 
+\mbox{\Hypertarget{classPO_ace1f6fafcf01893b0917abd0d724ca71}\label{classPO_ace1f6fafcf01893b0917abd0d724ca71}} 
+std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ {\bfseries tied\+Parties}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPO_aa4eade274e78cdc6f4d37b8db1d9fce1}\label{classPO_aa4eade274e78cdc6f4d37b8db1d9fce1}} 
+\index{PO@{PO}!PO@{PO}}
+\index{PO@{PO}!PO@{PO}}
+\doxysubsubsection{\texorpdfstring{PO()}{PO()}}
+{\footnotesize\ttfamily P\+O\+::\+PO (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classPO}{PO}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file containing the ballot data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPO_a5ef1cda2a89681bac1dd19a445d86533}\label{classPO_a5ef1cda2a89681bac1dd19a445d86533}} 
+\index{PO@{PO}!GetTiedParties@{GetTiedParties}}
+\index{GetTiedParties@{GetTiedParties}!PO@{PO}}
+\doxysubsubsection{\texorpdfstring{GetTiedParties()}{GetTiedParties()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classEntrants}{Entrants}}$>$ P\+O\+::\+Get\+Tied\+Parties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Tied\+Parties vector. 
+
+\begin{DoxyReturn}{Returns}
+Returns a vector of the parties that are tied. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPO_a82bbddb71c36af59e8c8990b84289ce6}\label{classPO_a82bbddb71c36af59e8c8990b84289ce6}} 
+\index{PO@{PO}!GetWinner@{GetWinner}}
+\index{GetWinner@{GetWinner}!PO@{PO}}
+\doxysubsubsection{\texorpdfstring{GetWinner()}{GetWinner()}}
+{\footnotesize\ttfamily std\+::string P\+O\+::\+Get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the winner of the election. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the winning party in the election. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPO_a8329a50fa3e508af9232daee2af4a88d}\label{classPO_a8329a50fa3e508af9232daee2af4a88d}} 
+\index{PO@{PO}!SetWinner@{SetWinner}}
+\index{SetWinner@{SetWinner}!PO@{PO}}
+\doxysubsubsection{\texorpdfstring{SetWinner()}{SetWinner()}}
+{\footnotesize\ttfamily void P\+O\+::\+Set\+Winner (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$}]{to\+Upd }\end{DoxyParamCaption})}
+
+
+
+Updates parties vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Upd} & The vectors of entrants to update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPO_aa7baf6622e6e001e4c2cc667f515e1ae}\label{classPO_aa7baf6622e6e001e4c2cc667f515e1ae}} 
+\index{PO@{PO}!TieChecker@{TieChecker}}
+\index{TieChecker@{TieChecker}!PO@{PO}}
+\doxysubsubsection{\texorpdfstring{TieChecker()}{TieChecker()}}
+{\footnotesize\ttfamily bool P\+O\+::\+Tie\+Checker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if there is a tie in the election. 
+
+\begin{DoxyReturn}{Returns}
+True if there is a tie, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPO_a9c52812fbea34c872cdd2fe50475d6ea}\label{classPO_a9c52812fbea34c872cdd2fe50475d6ea}} 
+\index{PO@{PO}!UpdAudit@{UpdAudit}}
+\index{UpdAudit@{UpdAudit}!PO@{PO}}
+\doxysubsubsection{\texorpdfstring{UpdAudit()}{UpdAudit()}}
+{\footnotesize\ttfamily void P\+O\+::\+Upd\+Audit (\begin{DoxyParamCaption}\item[{std\+::string}]{to\+Append }\end{DoxyParamCaption})}
+
+
+
+Appends a string to the audit file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Append} & The string to append to the audit file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/achum003/\+Desktop/csci-\/5801/repo-\/\+Team4/\+Project2/src/include/P\+O.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\hypertarget{classAudit}{}\doxysection{Audit Class Reference}
+\label{classAudit}\index{Audit@{Audit}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAudit_a93ce22dc7204c55e4f4be6d3966fac4e}\label{classAudit_a93ce22dc7204c55e4f4be6d3966fac4e}} 
+void \mbox{\hyperlink{classAudit_a93ce22dc7204c55e4f4be6d3966fac4e}{Print\+Audit}} ()
+\begin{DoxyCompactList}\small\item\em Prints the audit information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAudit_af1135a9542aa30e6aed11c797840ca8a}\label{classAudit_af1135a9542aa30e6aed11c797840ca8a}} 
+\mbox{\hyperlink{classAudit_af1135a9542aa30e6aed11c797840ca8a}{Audit}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classAudit}{Audit}} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAudit_a2593fe0b26d111a79e716f004602adc4}{Get\+Entrants}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of entrants in the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAudit_af7fc588d116b3595d89128a2455bbcdb}{Upd\+Entrants}} (int num)
+\begin{DoxyCompactList}\small\item\em Updates the number of entrants in the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAudit_affb9194770e4b7fcff9541f864db7e1c}{Upd\+Ballot}} (int num)
+\begin{DoxyCompactList}\small\item\em Updates the number of ballots cast in the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAudit_ae14cb39280d7bc28b2f77d1ad2623c46}{Upd\+Vote}} (std\+::string type)
+\begin{DoxyCompactList}\small\item\em Updates the type of vote used in the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAudit_a2c855d9d80af54bd913b333309050c2d}{Upd\+Winner}} (std\+::string winner)
+\begin{DoxyCompactList}\small\item\em Updates the winner of the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAudit_a5e51af01b44ddb9207090d73b1d44768}{Upd\+Date}} (std\+::string date)
+\begin{DoxyCompactList}\small\item\em Updates the date of the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAudit_a842c7ec42e2264e29a863241265a9c84}{Upd\+Entrants}} (\mbox{\hyperlink{classEntrants}{Entrants}} entrant)
+\begin{DoxyCompactList}\small\item\em Adds an \mbox{\hyperlink{classEntrants}{Entrants}} object to the vector of candidates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAudit_a9e77f4e7054d60dc24cab729b86a8404}\label{classAudit_a9e77f4e7054d60dc24cab729b86a8404}} 
+int {\bfseries num\+Of\+Entrants}
+\item 
+\mbox{\Hypertarget{classAudit_a82ffad8c04a0d25ddd15adcf10b99a34}\label{classAudit_a82ffad8c04a0d25ddd15adcf10b99a34}} 
+int {\bfseries num\+Of\+Ballots}
+\item 
+\mbox{\Hypertarget{classAudit_a617b786f080fe0ac1673f1240fe4e1e1}\label{classAudit_a617b786f080fe0ac1673f1240fe4e1e1}} 
+std\+::string {\bfseries type\+Of\+Vote}
+\item 
+\mbox{\Hypertarget{classAudit_a66fcd35aa569b11e50d96dce88357f71}\label{classAudit_a66fcd35aa569b11e50d96dce88357f71}} 
+std\+::string {\bfseries winner}
+\item 
+\mbox{\Hypertarget{classAudit_a0017eb1d7abf6137e8e3ebacf6de29be}\label{classAudit_a0017eb1d7abf6137e8e3ebacf6de29be}} 
+std\+::string {\bfseries date}
+\item 
+\mbox{\Hypertarget{classAudit_a2d31533a544fb19b7d42c5dca2ce6c2f}\label{classAudit_a2d31533a544fb19b7d42c5dca2ce6c2f}} 
+std\+::vector$<$ \mbox{\hyperlink{classEntrants}{Entrants}} $>$ {\bfseries entrants}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAudit_a2593fe0b26d111a79e716f004602adc4}\label{classAudit_a2593fe0b26d111a79e716f004602adc4}} 
+\index{Audit@{Audit}!GetEntrants@{GetEntrants}}
+\index{GetEntrants@{GetEntrants}!Audit@{Audit}}
+\doxysubsubsection{\texorpdfstring{GetEntrants()}{GetEntrants()}}
+{\footnotesize\ttfamily int Audit\+::\+Get\+Entrants (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of entrants in the election. 
+
+\begin{DoxyReturn}{Returns}
+The number of entrants in the election. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAudit_affb9194770e4b7fcff9541f864db7e1c}\label{classAudit_affb9194770e4b7fcff9541f864db7e1c}} 
+\index{Audit@{Audit}!UpdBallot@{UpdBallot}}
+\index{UpdBallot@{UpdBallot}!Audit@{Audit}}
+\doxysubsubsection{\texorpdfstring{UpdBallot()}{UpdBallot()}}
+{\footnotesize\ttfamily void Audit\+::\+Upd\+Ballot (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Updates the number of ballots cast in the election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The new number of ballots cast. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAudit_a5e51af01b44ddb9207090d73b1d44768}\label{classAudit_a5e51af01b44ddb9207090d73b1d44768}} 
+\index{Audit@{Audit}!UpdDate@{UpdDate}}
+\index{UpdDate@{UpdDate}!Audit@{Audit}}
+\doxysubsubsection{\texorpdfstring{UpdDate()}{UpdDate()}}
+{\footnotesize\ttfamily void Audit\+::\+Upd\+Date (\begin{DoxyParamCaption}\item[{std\+::string}]{date }\end{DoxyParamCaption})}
+
+
+
+Updates the date of the election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The new date of the election. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAudit_a842c7ec42e2264e29a863241265a9c84}\label{classAudit_a842c7ec42e2264e29a863241265a9c84}} 
+\index{Audit@{Audit}!UpdEntrants@{UpdEntrants}}
+\index{UpdEntrants@{UpdEntrants}!Audit@{Audit}}
+\doxysubsubsection{\texorpdfstring{UpdEntrants()}{UpdEntrants()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Audit\+::\+Upd\+Entrants (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntrants}{Entrants}}}]{entrant }\end{DoxyParamCaption})}
+
+
+
+Adds an \mbox{\hyperlink{classEntrants}{Entrants}} object to the vector of candidates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entrant} & The \mbox{\hyperlink{classEntrants}{Entrants}} object to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAudit_af7fc588d116b3595d89128a2455bbcdb}\label{classAudit_af7fc588d116b3595d89128a2455bbcdb}} 
+\index{Audit@{Audit}!UpdEntrants@{UpdEntrants}}
+\index{UpdEntrants@{UpdEntrants}!Audit@{Audit}}
+\doxysubsubsection{\texorpdfstring{UpdEntrants()}{UpdEntrants()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Audit\+::\+Upd\+Entrants (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Updates the number of entrants in the election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The new number of entrants. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAudit_ae14cb39280d7bc28b2f77d1ad2623c46}\label{classAudit_ae14cb39280d7bc28b2f77d1ad2623c46}} 
+\index{Audit@{Audit}!UpdVote@{UpdVote}}
+\index{UpdVote@{UpdVote}!Audit@{Audit}}
+\doxysubsubsection{\texorpdfstring{UpdVote()}{UpdVote()}}
+{\footnotesize\ttfamily void Audit\+::\+Upd\+Vote (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Updates the type of vote used in the election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The new type of vote. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAudit_a2c855d9d80af54bd913b333309050c2d}\label{classAudit_a2c855d9d80af54bd913b333309050c2d}} 
+\index{Audit@{Audit}!UpdWinner@{UpdWinner}}
+\index{UpdWinner@{UpdWinner}!Audit@{Audit}}
+\doxysubsubsection{\texorpdfstring{UpdWinner()}{UpdWinner()}}
+{\footnotesize\ttfamily void Audit\+::\+Upd\+Winner (\begin{DoxyParamCaption}\item[{std\+::string}]{winner }\end{DoxyParamCaption})}
+
+
+
+Updates the winner of the election. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & The new winner of the election. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/achum003/\+Desktop/csci-\/5801/repo-\/\+Team4/\+Project2/src/include/Audit.\+h\end{DoxyCompactItemize}
